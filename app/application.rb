@@ -3,7 +3,7 @@ class Application
     resp = Rack::Response.new
     time = Time.now
     time_2 = time.strftime("%H:%M:%S")
-    if time_2 < 12:0:0
+    if time_2 < 12:00:00
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"
